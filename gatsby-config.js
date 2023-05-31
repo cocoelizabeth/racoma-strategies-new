@@ -4,32 +4,41 @@
 module.exports = {
   siteMetadata: {
     title: `Racoma Strategies`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://racomastrategies.com`,
+    description: `Racoma Strategies is a search fund focused on acquiring, operating, and growing a single high-potential small business.`,
+    image:  '/favicon-32x32.png'
   },
-  plugins: [{
+  plugins: [
+  {
     resolve: 'gatsby-source-sanity',
     options: {
       "projectId": "jpg1p17m",
       "dataset": "production"
     }
-  }, "gatsby-plugin-image", 
+  }, 
+  "gatsby-plugin-image", 
   "gatsby-plugin-sharp", 
   "gatsby-transformer-sharp", 
   "gatsby-plugin-styled-components", 
   // "gatsby-plugin-google-gtag", 
-  "gatsby-plugin-sitemap", {
+  "gatsby-plugin-sitemap", 
+  {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
     }
-  }, "gatsby-plugin-mdx", "gatsby-transformer-remark", {
+  }, 
+  "gatsby-plugin-mdx", 
+  "gatsby-transformer-remark", 
+  {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
       "path": "./src/images/"
     },
     __key: "images"
-  }, {
+  }, 
+  {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "pages",
