@@ -13,7 +13,7 @@ export const ButtonStyles = styled(Link)`
   cursor: pointer;
   border-radius: 1.6rem;
   padding: 0.2rem 3rem 0;
-  ${'' /* overflow: hidden; */}
+  overflow: hidden;
   color: currentColor;
   font-weight: var(--font-weight-bold);
   font-size: 1.1rem;

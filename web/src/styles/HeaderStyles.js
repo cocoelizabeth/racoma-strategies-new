@@ -5,7 +5,7 @@ export default styled.header`
   top: 0;
   left: 0;
   z-index: 1000;
-  ${'' /* overflow: hidden; */}
+  overflow: hidden;
   transition: background 0.3s ease-in-out;
   will-change: transform;
 
