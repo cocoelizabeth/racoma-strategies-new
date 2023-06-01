@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles';
-// import MyPortableText from '../MyPortableText';
-// import Button from '../buttons/Button';
+import MyPortableText from '../MyPortableText';
+import Button from '../buttons/Button';
 
 function HeroSection() {
   const data = useStaticQuery(graphql`
@@ -26,46 +26,20 @@ function HeroSection() {
     <HeroSectionStyles>
       <section>
         <div className="hero__wrapper">
-          {/* <div ref={headlineRef} className="headlineText h2 word"></div> */}
           <div className="headlineText h2">{hero.headlineText}</div>
-          {/* <div className="headlineText h2">
-            <h1>{hero.headlineText}</h1>
-          </div> */}
-
           <div className="subheadingText">
-            {/* <MyPortableText
+            <MyPortableText
               className="subheadingText__text"
               value={hero._rawSubHeadlineText}
-            /> */}
+            />
             <span className="placeholder" />
-            {/* <Button to={hero.link} tag={Link} className="heroCTA">
+            <Button to={hero.link} tag={Link} className="heroCTA">
               {hero.cta}
-            </Button> */}
+            </Button>
           </div>
         </div>
 
       </section>
-      {/* <div className="hero__wrapper">
-        <div className="left">
-          <Title>{hero.headlineText}</Title>
-          <MyPortableText
-            className=""
-            value={hero._rawSubHeadlineText}
-          ></MyPortableText>
-          <Button to={hero.link} tag={Link}>
-            {hero.cta}
-          </Button>
-        </div> */}
-      {/* <div className="right">
-            <StaticImage
-              className="hero__image"
-              src="../../images/vr-guy.jpg"
-              alt="vr guy"
-              placeholder="blurred"
-              objectPosition="50% 30%"
-            />
-          </div> */}
-      {/* </div> */}
     </HeroSectionStyles>
   );
 }

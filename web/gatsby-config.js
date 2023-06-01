@@ -1,9 +1,9 @@
 require('dotenv').config('./.env');
 const sanityConfig = require('./sanity-config');
 
-// /**
-//  * @type {import('gatsby').GatsbyConfig}
-//  */
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 
 
 module.exports = {
@@ -41,7 +41,23 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }, 
+  },
+  {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /static/,
+          omitKeys: [
+            'xmlnsDc',
+            'xmlnsCc',
+            'xmlnsRdf',
+            'xmlnsSvg',
+            'xmlnsSodipodi',
+            'xmlnsInkscape',
+          ],
+        },
+      },
+    }, 
   {
     resolve: 'gatsby-source-filesystem',
     options: {
