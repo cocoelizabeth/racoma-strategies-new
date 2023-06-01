@@ -65,6 +65,12 @@ function CriteriaLists() {
           </div>
         </div>
         <div className="criteriaListContainer">
+          <div className="categoryTitle h2">{content.list2.headerText}</div>
+          <div className="criteriaListText">
+            <MyPortableText value={content.list2._rawSubText} />
+          </div>
+        </div>
+          <div className="criteriaListContainer">
           <div className="categoryTitle h2">{content.list3.headerText}</div>
           <div className="criteriaListText">
             <MyPortableText value={content.list3._rawSubText} />
