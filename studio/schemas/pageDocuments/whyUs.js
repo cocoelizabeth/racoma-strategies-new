@@ -8,10 +8,10 @@ export default {
       name: 'hero',
       type: 'textBlock',
     },
-    // {
-    //   title: 'Content Section',
-    //   name: 'contentSection',
-    //   type: 'reasons',
-    // },
+    {
+      title: 'Content Section',
+      name: 'contentSection',
+      type: 'reasons',
+    },
   ],
 };

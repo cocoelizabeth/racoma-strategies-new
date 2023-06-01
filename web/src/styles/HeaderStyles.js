@@ -11,10 +11,10 @@ export default styled.header`
 
   .header__logo,
   .header__logoDummy {
-    font-family: SctoGroteskA;
     font-weight: bold;
     line-height: 1.6rem;
     text-transform: uppercase;
+    font-family: var(--font-family);
 
   }
   .header__container {

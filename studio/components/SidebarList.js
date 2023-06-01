@@ -1,4 +1,6 @@
 import { MdStar, MdHome, MdPerson } from 'react-icons/md';
+import {AiOutlineOrderedList} from 'react-icons/ai'
+import { BsFillQuestionCircleFill } from 'react-icons/bs'
 import { GrSearch } from 'react-icons/gr';
 import S from '@sanity/desk-tool/structure-builder';
 
@@ -42,6 +44,13 @@ function SidebarList() {
         .icon(GrSearch)
         .child(
           S.editor().schemaType('whatWeLookFor').documentId('whatWeLookFor')
+        ),
+      S.listItem()
+        .title('Why Us')
+        .id('whyUs')
+        .icon(BsFillQuestionCircleFill)
+        .child(
+          S.editor().schemaType('whyUs').documentId('whyUs')
         ),
       S.listItem()
         .title('Blog')

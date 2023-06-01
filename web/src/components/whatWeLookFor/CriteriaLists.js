@@ -38,19 +38,19 @@ function CriteriaLists() {
   `);
 
   const content = data.allSanityWhatWeLookFor.nodes[0].contentSection;
-  const contentBlocks = [
-    content.list1,
-    content.list2,
-    content.list3,
-    content.list4,
-  ];
-  const contentBlockItems = contentBlocks.map((item) => (
-    <TextBlockCTAItem
-      headerText={item.headerText}
-      _rawSubText={item._rawSubText}
-      _key={item._key}
-    />
-  ));
+  // const contentBlocks = [
+  //   content.list1,
+  //   content.list2,
+  //   content.list3,
+  //   content.list4,
+  // ];
+  // const contentBlockItems = contentBlocks.map((item) => (
+  //   <TextBlockCTAItem
+  //     headerText={item.headerText}
+  //     _rawSubText={item._rawSubText}
+  //     _key={item._key}
+  //   />
+  // ));
 
   return (
     <CriteriaListsStyles>
@@ -70,12 +70,12 @@ function CriteriaLists() {
             <MyPortableText value={content.list3._rawSubText} />
           </div>
         </div>
-        <div className="criteriaListContainer">
+        {/* <div className="criteriaListContainer">
           <div className="categoryTitle h2">{content.list4.headerText}</div>
           <div className="criteriaListText">
             <MyPortableText value={content.list4._rawSubText} />
           </div>
-        </div>
+        </div> */}
 
       </section>
     </CriteriaListsStyles>

@@ -20,7 +20,7 @@ import textBlockCTA from './objects/textBlockCTA';
 import content from './objects/home/content';
 import criteriaLists from './objects/whatWeLookFor/criteriaLists';
 import textBlock from './objects/textBlock';
-// import reasonsList from './whyUs/reasonsList';
+import reasons from './objects/whyUs/reasons';   
 
 // import page documents
 import home from './pageDocuments/home';
@@ -49,6 +49,7 @@ export default createSchema({
     content,
     textBlock,
     criteriaLists,
+    reasons,
     // reasonsList,
   ]),
 });
