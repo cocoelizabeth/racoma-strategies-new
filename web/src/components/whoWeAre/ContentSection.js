@@ -77,7 +77,7 @@ function ContentSection() {
   return (
     <ContentSectionStyles>
       <section>
-      <h1>{content.capitalPartners.headerText}</h1>
+      {/* <h1>{content.capitalPartners.headerText}</h1> */}
 
         {/* <div className="criteriaListContainer">
           <div className="categoryTitle h2">{content.list1.headerText}</div>
