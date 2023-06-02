@@ -1,5 +1,4 @@
-import { MdStar, MdHome, MdPerson } from 'react-icons/md';
-import {AiOutlineOrderedList} from 'react-icons/ai'
+import { MdStar, MdHome, MdPerson, MdTimeline } from 'react-icons/md';
 import { BsFillQuestionCircleFill } from 'react-icons/bs'
 import { GrSearch } from 'react-icons/gr';
 import S from '@sanity/desk-tool/structure-builder';
@@ -52,6 +51,20 @@ function SidebarList() {
         .child(
           S.editor().schemaType('whyUs').documentId('whyUs')
         ),
+      S.listItem()
+          .title('Who We Are')
+          .id('whoWeAre')
+          .icon(MdPerson)
+          .child(
+            S.editor().schemaType('whoWeAre').documentId('whoWeAre')
+          ),
+        S.listItem()
+           .title('Our Process')
+           .id('ourProcess')
+           .icon(MdTimeline)
+           .child(
+            S.editor().schemaType('ourProcess').documentId('ourProcess')
+           ),
       S.listItem()
         .title('Blog')
         .child(

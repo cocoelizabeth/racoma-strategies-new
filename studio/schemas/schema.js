@@ -21,11 +21,14 @@ import content from './objects/home/content';
 import criteriaLists from './objects/whatWeLookFor/criteriaLists';
 import textBlock from './objects/textBlock';
 import reasons from './objects/whyUs/reasons';   
+import steps from './objects/ourProcess/steps';
 
 // import page documents
 import home from './pageDocuments/home';
 import whatWeLookFor from './pageDocuments/whatWeLookFor';
 import whyUs from './pageDocuments/whyUs';
+import whoWeAre from './pageDocuments/whoWeAre';
+import ourProcess from './pageDocuments/ourProcess';
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
@@ -33,6 +36,8 @@ export default createSchema({
     home,
     whatWeLookFor,
     whyUs,
+    whoWeAre,
+    ourProcess,
     // blog documents
     blog,
     author,
@@ -50,6 +55,7 @@ export default createSchema({
     textBlock,
     criteriaLists,
     reasons,
+    steps,
     // reasonsList,
   ]),
 });

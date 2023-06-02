@@ -4,7 +4,7 @@ import { SEO } from "../components/SEO";
 import ContentSection from "../components/whyUs/ContentSection";
 import CriteriaLists from "../components/whatWeLookFor/CriteriaLists";
 import ContactSection from "../components/homepage/ContactSection";
-const WhyUs = () => (
+const WhyUsPage = () => (
   <>
     <SEO title="Why Us" />
     <HeroSection />
@@ -15,4 +15,4 @@ const WhyUs = () => (
   </>
 );
 
-export default WhyUs;
+export default WhyUsPage;
