@@ -66,19 +66,6 @@ function ContentSection() {
   }
   
 
-  // const contentBlocks = [
-  //   content.list1,
-  //   content.list2,
-  //   content.list3,
-  //   content.list4,
-  // ];
-  // const contentBlockItems = contentBlocks.map((item) => (
-  //   <TextBlockCTAItem
-  //     headerText={item.headerText}
-  //     _rawSubText={item._rawSubText}
-  //     _key={item._key}
-  //   />
-  // ));
 
   return (
     <ContentSectionStyles>
@@ -86,32 +73,30 @@ function ContentSection() {
         <div className="introContainer">
           <div className="headshotContainer">
             {/* <h2>{headshotImage.caption}</h2> */}
-            <div className="sectionTitle">
-              <h2>ADAM KAPLAN</h2>
-              <h5>PRINCIPAL</h5>
-            </div>
-
             <div className="imageContainer">
               <GatsbyImage
                 image={headshotImage.imageData}
                 alt={headshotImage.altText}
                 className="img"
               />
-
-              <ul className="whoWeAre__iconsList">
-                {/* {socialLinks.map((item) => (
+            </div>
+            <div className="sectionTitle">
+              <h2>ADAM KAPLAN</h2>
+              <h5>PRINCIPAL</h5>
+            </div>
+            <ul className="whoWeAre__iconsList">
+              {/* {socialLinks.map((item) => (
                 <li key={item.name}>
                   <a href={item.url}>{item.icon}</a>
                 </li>
               ))} */}
-                <li key="LinkedIn">
-                  <a href={linkedInUrl}>{<FaLinkedin />}</a>
-                </li>
-                <li key="Email">
-                  <a href={email}>{<MdEmail />}</a>
-                </li>
-              </ul>
-            </div>
+              <li key="LinkedIn">
+                <a href={linkedInUrl}>{<FaLinkedin />}</a>
+              </li>
+              <li key="Email">
+                <a href={email}>{<MdEmail />}</a>
+              </li>
+            </ul>
           </div>
 
           <div className="aboutContainer">
@@ -122,9 +107,15 @@ function ContentSection() {
           </div>
         </div>
 
-        <h2>{content.capitalPartners.headerText}</h2>
-        <div className="about body">
-          <MyPortableText value={capitalPartners.body} />
+        <div className="capitalPartnersContainer">
+          <div className="sectionTitle">
+            <h2>{content.capitalPartners.headerText}</h2>
+          </div>
+          <div className="aboutContainer">
+            <div className="about body">
+              <MyPortableText value={capitalPartners.body} />
+            </div>
+          </div>
         </div>
 
         {/* <h1>{content.capitalPartners.headerText}</h1> */}
