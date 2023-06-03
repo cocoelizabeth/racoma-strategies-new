@@ -85,7 +85,7 @@ export const HeroSectionStyles = styled.div`
       }
     }
     .headlineText {
-      padding-bottom: 1em;
+      ${'' /* padding-bottom: 1em; */}
       font-size: 5.3vw;
       width: 50%;
       width: 100%;

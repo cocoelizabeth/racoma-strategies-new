@@ -4,6 +4,7 @@ import { ContentSectionStyles } from '../../styles/ourProcess/ContentSectionStyl
 import MyPortableText from '../MyPortableText';
 import Button from '../buttons/Button';
 import TextBlockCTAItem from './TextBlockCTAItem';
+import {TbCircle1Filled, TbCircle2Filled, TbCircle3Filled, TbCircle4Filled, TbCircle5Filled } from 'react-icons/tb'
 
 function ContentSection() {
   const data = useStaticQuery(graphql`
@@ -37,22 +38,25 @@ function ContentSection() {
     }
   `);
 
-  const steps = data.allSanityOurProcess.nodes[0].steps;
-  // const contentBlocks = [
-  //   steps.step1,
-  //   steps.step2,
-  //   steps.step3,
-  //   steps.step4,
-  // ];
-  // const contentBlockItems = contentBlocks.map((item) => (
-  //   <TextBlockCTAItem
-  //     headerText={item.headerText}
-  //     _rawSubText={item._rawSubText}
-  //     cta={item.cta}
-  //     link={item.link}
-  //     _key={item._key}
-  //   />
-  // ));
+  const stepsData = data.allSanityOurProcess.nodes[0].steps;
+  const stepArray = Object.keys(stepsData);
+  const iconsArray = [
+    <TbCircle1Filled/>,
+    <TbCircle2Filled/>,
+    <TbCircle3Filled/>,
+    <TbCircle4Filled/>,
+    <TbCircle5Filled/>,
+  ];
+  const steps = stepArray.map((step, i) => (
+    <li className="stepContainer" data-1={stepsData[step].headerText} key={i}>
+        {iconsArray[i]}
+        <p className="step__heading">
+            <strong>{stepsData[step].headerText}</strong>
+          </p>
+          <MyPortableText value={stepsData[step]._rawSubText} />
+    </li>
+  ))
+
 
   return (
     <ContentSectionStyles>
@@ -63,31 +67,11 @@ function ContentSection() {
         {/* <div className="contentSection__grid">
           {contentBlockItems}
         </div> */}
-        <div className="contentSection__grid_row">
-          <p className="contentSection_smallHeading">
-            <strong>{steps.step1.headerText}</strong>
-          </p>
-          <MyPortableText value={steps.step1._rawSubText} />
-          {/* BLOCK 2 */}
-
-          <p className="contentSection_smallHeading">
-            <strong>{steps.step2.headerText}</strong>
-          </p>
-          <MyPortableText value={steps.step2._rawSubText} />
+        <div className="stepsContainer">
+        <ul>
+          {steps}
+        </ul>
         </div>
-        <div className="contentSection__grid_row">
-          <p className="contentSection_smallHeading">
-            <strong>{steps.step3.headerText}</strong>
-          </p>
-          <MyPortableText value={steps.step3._rawSubText} />
-          {/* BLOCK 2 */}
-
-          <p className="contentSection_smallHeading">
-            <strong>{steps.step4.headerText}</strong>
-          </p>
-          <MyPortableText value={steps.step4._rawSubText} />
-        </div>
-        {/* <BlogGrid blogs={featuredBlogs} /> */}
       </section>
     </ContentSectionStyles>
   );

@@ -23,6 +23,7 @@ export const HeroSectionStyles = styled.div`
   .headlineText {
     text-transform: uppercase;
     width: 100%;
+    font-size: 4rem;
   }
 
 

@@ -5,34 +5,29 @@ export const ContentSectionStyles = styled.div`
   color: var(--racoma-light);
   padding-top: var(--page-intro-small);
   padding-bottom: calc(var(--page-section) - 2rem);
-  border-bottom: 1px solid var(--racoma-light);
+
   .contentSection__introText {
     padding-bottom: var(--page-intro-small);
     border-bottom: 1px solid var(--racoma-light);
   }
 
-  .contentSection__grid_row {
-    grid-template-columns: 100%;
-    p {
-      margin-bottom: 2rem;
-      strong {
-        ${
-          '' /*             
-           font-weight: var(--font-weight-h3);
-          font-size: var(--font-size-h3);
-          line-height: var(--line-height-h3);
-          letter-spacing: var(--letter-spacing-h3); */
-        }
+  .stepsContainer {
+    ul {
+      display:flex;
+      justify-content: space-between;
+      li {
+        align-items: center;
+        justify-content: top;
+        display: flex;
+        flex-direction: column;''
+        width: 20%;
+        max-width: 20%;
       }
     }
-    p:last-child,
-    p:nth-child(2) {
-      padding-bottom: 2rem;
-    }
-    .contentSection_smallHeading {
-      border-top: 1px solid var(--racoma-light);
-      padding-top: 4rem;
-      text-transform: uppercase;
+  
+
+    svg {
+      max-width: 30px;
     }
   }
 

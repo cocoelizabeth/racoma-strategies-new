@@ -1,6 +1,6 @@
 import { MdLocalPhone, MdEmail } from 'react-icons/md';
 import React from 'react';
-
+import { FaLinkedin } from 'react-icons/fa';
 export const socialLinks = [
   {
     name: 'Phone',
@@ -14,4 +14,10 @@ export const socialLinks = [
     text: 'info@racomastrategies.com',
     icon: <MdEmail />,
   },
+    {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/adamlkaplan',
+    text:'LinkedIn',
+    icon: <FaLinkedin />,
+  }
 ];

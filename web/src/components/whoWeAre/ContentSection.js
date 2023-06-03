@@ -4,6 +4,11 @@ import { ContentSectionStyles } from "../../styles/whoWeAre/ContentSectionStyles
 import MyPortableText from "../MyPortableText";
 import Button from "../buttons/Button";
 import TextBlockCTAItem from "../homepage/TextBlockCTAItem";
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { socialLinks } from "../../constants/socialLinks";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+
 
 function ContentSection() {
   const data = useStaticQuery(graphql`
@@ -59,6 +64,7 @@ function ContentSection() {
     title: content.capitalPartners.headerText,
     body: content.capitalPartners._rawSubText,
   }
+  
 
   // const contentBlocks = [
   //   content.list1,
@@ -77,7 +83,51 @@ function ContentSection() {
   return (
     <ContentSectionStyles>
       <section>
-      {/* <h1>{content.capitalPartners.headerText}</h1> */}
+        <div className="introContainer">
+          <div className="headshotContainer">
+            {/* <h2>{headshotImage.caption}</h2> */}
+            <div className="sectionTitle">
+              <h2>ADAM KAPLAN</h2>
+              <h5>PRINCIPAL</h5>
+            </div>
+
+            <div className="imageContainer">
+              <GatsbyImage
+                image={headshotImage.imageData}
+                alt={headshotImage.altText}
+                className="img"
+              />
+
+              <ul className="whoWeAre__iconsList">
+                {/* {socialLinks.map((item) => (
+                <li key={item.name}>
+                  <a href={item.url}>{item.icon}</a>
+                </li>
+              ))} */}
+                <li key="LinkedIn">
+                  <a href={linkedInUrl}>{<FaLinkedin />}</a>
+                </li>
+                <li key="Email">
+                  <a href={email}>{<MdEmail />}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="aboutContainer">
+            {/* <div className="h5">{about.title}</div> */}
+            <div className="about body">
+              <MyPortableText value={about.body} />
+            </div>
+          </div>
+        </div>
+
+        <h2>{content.capitalPartners.headerText}</h2>
+        <div className="about body">
+          <MyPortableText value={capitalPartners.body} />
+        </div>
+
+        {/* <h1>{content.capitalPartners.headerText}</h1> */}
 
         {/* <div className="criteriaListContainer">
           <div className="categoryTitle h2">{content.list1.headerText}</div>
@@ -97,8 +147,6 @@ function ContentSection() {
             <MyPortableText value={content.list3._rawSubText} />
           </div>
         </div> */}
-
-
       </section>
     </ContentSectionStyles>
   );

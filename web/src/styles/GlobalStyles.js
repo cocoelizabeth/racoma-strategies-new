@@ -24,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
     --racoma-light: #F9EBE3ff;
     --racoma-khaki: #90836Bff;
     --racoma-navy: #394E54ff;
+    --racoma-light-50opacity: rgba(249, 235, 227, 0.5);
   }
 
   @font-face {
@@ -247,14 +248,14 @@ sup {
     list-style: none;
   }
 
-${'' /* HEADER STYLES */}
+${"" /* HEADER STYLES */}
 :root {
  --header-height: calc(32px + ((1.5rem + 2.5vw) * 2));
 }
 
 @media only screen and (min-width: 1280px) {
     :root {
-        ${'' /* --header-height:12.8rem; */}
+        ${"" /* --header-height:12.8rem; */}
     }
 }
 .smooth-scroll-content {
@@ -523,6 +524,10 @@ section {
         --industry-meta-bar:8.5rem
          
     }
+}
+
+.react-icons {
+  vertical-align: middle;
 }
 
 

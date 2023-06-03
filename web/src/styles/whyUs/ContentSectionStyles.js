@@ -5,7 +5,7 @@ export const ContentSectionStyles = styled.div`
   color: var(--racoma-light);
   padding-top: var(--page-intro-small);
   padding-bottom: calc(var(--page-section) - 2rem);
-  border-bottom: 1px solid var(--racoma-light);
+
   .contentSection__introText {
     padding-bottom: var(--page-intro-small);
     border-bottom: 1px solid var(--racoma-light);
