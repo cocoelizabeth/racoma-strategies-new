@@ -848,7 +848,7 @@ main>section {
     will-change: transform,visibility;
     padding-right: var(--grid-padding);
     padding-left: var(--grid-padding);
-    overflow: hidden
+    /* overflow: hidden */
 }
 
 main>section:first-of-type {

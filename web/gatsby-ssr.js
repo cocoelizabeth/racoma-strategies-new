@@ -30,6 +30,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
   ]);
 };
 
-export const wrapPageElement = ({ element, props }) => (
-  <Layout {...props}>{element}</Layout>
-);
+// export const wrapPageElement = ({ element, props }) => (
+//   <Layout {...props}>{element}</Layout>
+// );

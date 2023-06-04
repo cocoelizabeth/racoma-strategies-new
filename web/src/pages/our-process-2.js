@@ -1,14 +1,14 @@
 import React from "react";
 import HeroSection from "../components/ourProcess/HeroSection";
 import { SEO } from "../components/SEO";
-import ContentSection from "../components/ourProcess/ContentSection";
+import ContentSection2 from "../components/ourProcess/ContentSection2";
 
-const OurProcessPage = () => (
+const OurProcess2 = () => (
   <>
     <SEO title="Who We Are" />
     <HeroSection />
-    <ContentSection />
+    <ContentSection2 />
   </>
 );
 
-export default OurProcessPage;
+export default OurProcess2;
