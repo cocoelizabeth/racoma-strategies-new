@@ -24,11 +24,11 @@ function Footer() {
               ))}
             </ul>
           </div>
-          <div className="footer__button col">
+          {/* <div className="footer__button col">
             <Button to="/" tag={Link} variant="primaryFilled">
               Intermediary Brochure
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
