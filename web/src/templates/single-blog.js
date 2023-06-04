@@ -6,7 +6,7 @@ import { FiCalendar, FiUser } from 'react-icons/fi';
 import { BiCategory } from 'react-icons/bi';
 import { SingleBlogStyles } from '../styles/blog/SingleBlogStyles';
 import { Title } from '../components/typography/Title';
-import SEO from '../components/SEO';
+import ( SEO ) from '../components/SEO';
 import PageSpace from '../components/PageSpace';
 import MyPortableText from '../components/MyPortableText';
 import ParagraphText from '../components/typography/ParagraphText';
