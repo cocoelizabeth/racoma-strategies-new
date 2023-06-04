@@ -3,7 +3,7 @@ import HeroSection from "../components/ourProcess/HeroSection";
 import { SEO } from "../components/SEO";
 import ContentSection from "../components/ourProcess/ContentSection";
 
-const OurProcessPage = () => (
+const OurProcess = () => (
   <>
     <SEO title="Who We Are" />
     <HeroSection />
@@ -11,4 +11,4 @@ const OurProcessPage = () => (
   </>
 );
 
-export default OurProcessPage;
+export default OurProcess;
