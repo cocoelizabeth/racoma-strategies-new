@@ -94,7 +94,7 @@ export const HeroSectionStyles = styled.div`
       ${'' /* font-size: 4.2rem; */}
       font-size: 3.2rem;
       ${'' /* padding-left: 50%; */}
-      width: 50%;
+      ${'' /* width: 50%; */}
     }
     .lineBreakContainer {
       height: calc(var(--page-section));

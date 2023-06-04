@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import React from 'react';
-import { ContactSectionStyles } from '../../styles/homePage/ContactSectionStyles';
+import { ContactSectionStyles } from '../../styles/contact/ContactSectionStyles';
 import MyPortableText from '../MyPortableText';
 import Button from '../buttons/Button';
 
@@ -36,7 +36,7 @@ function ContactSection() {
         </div> */}
         <div className="contactSection__wrapper">
           <div className="headingWrapper">
-            <h2 className="h2">{contact.headerText}</h2>
+            <h2 className="h2">GET IN TOUCH</h2>
           </div>
 
           <div className="h3 textWrapper">

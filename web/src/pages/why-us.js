@@ -16,3 +16,5 @@ const WhyUsPage = () => (
 );
 
 export default WhyUsPage;
+
+export const Head = () => <SEO title="Why Us" />;

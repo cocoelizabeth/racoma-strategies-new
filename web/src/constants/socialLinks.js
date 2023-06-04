@@ -14,10 +14,10 @@ export const socialLinks = [
     text: 'info@racomastrategies.com',
     icon: <MdEmail />,
   },
-    {
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/adamlkaplan',
-    text:'LinkedIn',
-    icon: <FaLinkedin />,
-  }
+  //   {
+  //   name: 'LinkedIn',
+  //   url: 'https://www.linkedin.com/adamlkaplan',
+  //   text:'LinkedIn',
+  //   icon: <FaLinkedin />,
+  // }
 ];

@@ -12,3 +12,5 @@ const WhoWeArePage = () => (
 );
 
 export default WhoWeArePage;
+
+export const Head = () => <SEO title="Who We Are" />;

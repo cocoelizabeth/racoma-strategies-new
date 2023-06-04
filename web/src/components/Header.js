@@ -80,15 +80,15 @@ const Header = () => {
                 </li>
               ))}
               <li className="mobileCTA">
-                <Button to="/get-an-offer" tag={Link}>
-                  GET AN OFFER
+                <Button to="/contact" tag={Link}>
+                  CONTACT US
                 </Button>
               </li>
             </ul>
           </nav>
         </div>
-        <Button to="/get-an-offer" tag={Link} className="header__cta desktop">
-          GET AN OFFER
+        <Button to="/contact" tag={Link} className="header__cta desktop">
+          CONTACT US
         </Button>
       </div>
     </HeaderStyles>

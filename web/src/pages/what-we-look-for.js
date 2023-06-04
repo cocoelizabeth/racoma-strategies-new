@@ -14,3 +14,5 @@ const WhatWeLookForPage = () => (
 );
 
 export default WhatWeLookForPage;
+
+export const Head = () => <SEO title="What We Look For" />;

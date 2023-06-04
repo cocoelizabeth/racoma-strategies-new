@@ -23,8 +23,8 @@ export const menu = [
   //   title: 'Blog',
   //   path: '/blog',
   // },
-  {
-    title: 'Contact',
-    path: '/contact',
-  },
+  // {
+  //   title: 'Contact',
+  //   path: '/contact',
+  // },
 ];

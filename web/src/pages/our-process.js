@@ -12,3 +12,5 @@ const OurProcess = () => (
 );
 
 export default OurProcess;
+
+export const Head = () => <SEO title="Our Process" />;
