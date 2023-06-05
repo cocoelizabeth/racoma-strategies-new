@@ -12,7 +12,6 @@ const Header = () => {
  
   const [isNavOpen, setIsNavOpen] = useState(false);
   const handleNavItemClick = () => {
-    debugger
     if (isNavOpen) {
       setIsNavOpen(false);
     }
