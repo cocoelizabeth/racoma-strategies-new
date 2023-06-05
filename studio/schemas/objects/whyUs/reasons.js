@@ -17,19 +17,19 @@ export default {
     {
       title: 'Reason 2',
       name: 'reason2',
-      type: 'textBlockCTA',
+      type: 'textBlock',
       fieldset: 'reasons',
     },
     {
       title: 'Reason 3',
       name: 'reason3',
-      type: 'textBlockCTA',
+      type: 'textBlock',
       fieldset: 'reasons',
     },
     {
       title: 'Reason 4',
       name: 'reason4',
-      type: 'textBlockCTA',
+      type: 'textBlock',
       fieldset: 'reasons',
     },
   ],

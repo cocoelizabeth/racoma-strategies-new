@@ -15,6 +15,7 @@ export default {
       title: 'Hero Section',
       name: 'hero',
       type: 'heroText',
+      description: 'First section on page with heading, paragraph text, and call to action button'
     },
     {
       title: 'Content Section',

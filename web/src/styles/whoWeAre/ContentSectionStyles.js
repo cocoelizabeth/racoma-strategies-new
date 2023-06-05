@@ -6,6 +6,7 @@ export const ContentSectionStyles = styled.div`
   ${"" /* padding-bottom: calc(var(--page-intro-small) - 2rem); */}
   width: 100%;
   h2,
+  h5,
   strong {
     text-transform: uppercase;
   }
@@ -60,6 +61,9 @@ export const ContentSectionStyles = styled.div`
       font-weight: var(--font-weight-medium);
       font-size: 2.2rem;
       line-height: 1.45;
+      ${'' /* line-height: 1.1;
+      letter-spacing: -0.035em; */}
+      padding-right: var(--grid-gutter)
     }
     p:first-of-type {
       margin-bottom: 5em;

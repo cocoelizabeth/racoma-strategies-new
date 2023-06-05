@@ -24,11 +24,13 @@ export default {
       name: 'cta',
       type: 'string',
       fieldset: 'subHeadline',
+      description: 'Text for call to action button, ex: Contact Us',
     },
     {
       title: 'Page to Link to',
       name: 'link',
       type: 'string',
+      description: 'ex: contact, our-process, what-we-look-for, etc', 
       fieldset: 'subHeadline',
     },
   ],

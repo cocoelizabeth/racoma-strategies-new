@@ -10,10 +10,8 @@ function HeroSection() {
       allSanityWhatWeLookFor {
         nodes {
           hero {
-            headlineText
-            _rawSubHeadlineText
-            cta
-            link
+            headerText
+            _rawSubText
           }
         }
       }
@@ -26,9 +24,9 @@ function HeroSection() {
     <HeroSectionStyles>
       <section>
         <div className="hero__wrapper">
-          <div className="headlineText h2">{hero.headlineText}</div>
+          <div className="headlineText h2">{hero.headerText}</div>
           <div className="subheadingText">
-            <MyPortableText className="criteraList" value={hero._rawSubHeadlineText} />
+            <MyPortableText className="criteraList" value={hero._rawSubText} />
             {/* <Button to={hero.link} tag={Link} className="heroCTA">
               {hero.cta}
             </Button> */}

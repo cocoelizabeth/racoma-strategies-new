@@ -2,10 +2,7 @@ import { graphql, useStaticQuery, Link } from "gatsby";
 import React from "react";
 import { ContentSectionStyles } from "../../styles/whoWeAre/ContentSectionStyles";
 import MyPortableText from "../MyPortableText";
-import Button from "../buttons/Button";
-import TextBlockCTAItem from "../homepage/TextBlockCTAItem";
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { socialLinks } from "../../constants/socialLinks";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -15,35 +12,32 @@ function ContentSection() {
     {
       allSanityWhoWeAre {
         nodes {
-      headshotImage {
-        alt
-        asset {
-          gatsbyImageData
+          headshotImage {
+            alt
+            asset {
+              gatsbyImageData
+            }
+          }
+          title
+          name
+          email
+          linkedInUrl
+          about {
+            _rawSubText
+            headerText
+          }
+          seo {
+            title
+            slug {
+              current
+            }
+            description
+          }
+          capitalPartners {
+            headerText
+            _rawSubText
+          }
         }
-      }
-      title {
-        children {
-          text
-        }
-      }
-      about {
-        headerText
-        _rawSubText
-      }
-      email
-      linkedInUrl
-      seo {
-        title
-        slug {
-          current
-        }
-        description
-      }
-      capitalPartners {
-        headerText
-        _rawSubText
-      }
-    }
       }
     }
   `);
@@ -52,8 +46,9 @@ function ContentSection() {
   const headshotImage = {
     imageData: content.headshotImage.asset.gatsbyImageData,
     altText: content.headshotImage.alt,
-    caption: content.title[0].children[0].text,
-  }
+    title: content.title,
+    name: content.name,
+  };
   const linkedInUrl = content.linkedInUrl;
   const email = "mailto:".concat(content.email);
   const about = {
@@ -72,7 +67,7 @@ function ContentSection() {
       <section>
         <div className="introContainer">
           <div className="headshotContainer">
-            {/* <h2>{headshotImage.caption}</h2> */}
+            {/* <h2>{headshotImage.title}</h2> */}
             <div className="imageContainer">
               <GatsbyImage
                 image={headshotImage.imageData}
@@ -81,8 +76,8 @@ function ContentSection() {
               />
             </div>
             <div className="sectionTitle">
-              <h2>ADAM KAPLAN</h2>
-              <h5>PRINCIPAL</h5>
+              <h2>{headshotImage.name}</h2>
+              <h5>{headshotImage.title}</h5>
             </div>
             <ul className="whoWeAre__iconsList">
               {/* {socialLinks.map((item) => (

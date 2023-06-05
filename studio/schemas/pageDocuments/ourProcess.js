@@ -1,24 +1,23 @@
 export default {
-  title: 'Our Process',
-  name: 'ourProcess',
-  type: 'document',
+  title: "Our Process",
+  name: "ourProcess",
+  type: "document",
   fields: [
     {
-      title: 'SEO',
-      name: 'seo',
-      type: 'customSEO',
+      title: "SEO",
+      name: "seo",
+      type: "customSEO",
     },
     {
-        title: 'Hero',
-        type:'textBlock',
-        name: 'hero',
-
+      title: "Hero",
+      type: "textBlock",
+      name: "hero",
+      description: "First section on page with heading & paragraph text",
     },
     {
-      title: 'Our Process',
-      type: 'process',
-      name: 'steps'
-    }
-]
-
+      title: "Our Process",
+      type: "process",
+      name: "steps",
+    },
+  ],
 };

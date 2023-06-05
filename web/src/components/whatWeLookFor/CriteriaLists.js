@@ -26,11 +26,6 @@ function CriteriaLists() {
               headerText
               _rawSubText
             }
-            list4 {
-              _key
-              headerText
-              _rawSubText
-            }
           }
         }
       }
@@ -76,12 +71,6 @@ function CriteriaLists() {
             <MyPortableText value={content.list3._rawSubText} />
           </div>
         </div>
-        {/* <div className="criteriaListContainer">
-          <div className="categoryTitle h2">{content.list4.headerText}</div>
-          <div className="criteriaListText">
-            <MyPortableText value={content.list4._rawSubText} />
-          </div>
-        </div> */}
 
       </section>
     </CriteriaListsStyles>

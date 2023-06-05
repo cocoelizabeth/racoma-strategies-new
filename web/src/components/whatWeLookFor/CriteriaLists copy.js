@@ -26,11 +26,6 @@ function CriteriaLists() {
               headerText
               _rawSubText
             }
-            list4 {
-              _key
-              headerText
-              _rawSubText
-            }
           }
         }
       }
@@ -42,7 +37,6 @@ function CriteriaLists() {
     content.list1,
     content.list2,
     content.list3,
-    content.list4,
   ];
   const contentBlockItems = contentBlocks.map((item) => (
     <TextBlockCTAItem
@@ -76,12 +70,7 @@ function CriteriaLists() {
           </p>
           {/* BLOCK 2 */}
 
-          <p className="contentSection_smallHeading">
-            <strong>{content.list4.headerText}</strong>
-          </p>
-          <p>
-            <MyPortableText value={content.list4._rawSubText} />
-          </p>
+
           {/* BLOCK 2 */}
           {/* 
           <p className="contentSection_smallHeading">

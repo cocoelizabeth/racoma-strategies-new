@@ -2,6 +2,7 @@ export default {
   type: 'object',
   name: 'content',
   title: 'Content Section',
+  description: "Second section on homepage with intro paragraph and blocks of text that link to other pages on website",
   options: {
     collapsible: true,
     collapsed: true,
