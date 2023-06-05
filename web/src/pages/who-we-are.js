@@ -5,7 +5,7 @@ import ContentSection from "../components/whoWeAre/ContentSection";
 
 const WhoWeArePage = () => (
   <>
-    <SEO title="Who We Are" />
+    <SEO title="Who We Are | RACOMA STRATEGIES" />
     <HeroSection />
     <ContentSection />
   </>
@@ -13,4 +13,4 @@ const WhoWeArePage = () => (
 
 export default WhoWeArePage;
 
-export const Head = () => <SEO title="Who We Are" />;
+export const Head = () => <SEO title="Who We Are | RACOMA STRATEGIES" />;

@@ -6,7 +6,7 @@ import ContactSection from "../components/homepage/ContactSection";
 
 const WhatWeLookForPage = () => (
   <>
-    <SEO title="What We Look For" />
+    <SEO title="What We Look For | RACOMA STRATEGIES" />
     <HeroSection />
     <CriteriaLists />
     {/* <ContactSection /> */}
@@ -15,4 +15,6 @@ const WhatWeLookForPage = () => (
 
 export default WhatWeLookForPage;
 
-export const Head = () => <SEO title="What We Look For" />;
+export const Head = () => (
+  <SEO title="What We Look For | RACOMA STRATEGIES" />
+);
