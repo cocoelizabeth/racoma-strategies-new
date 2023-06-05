@@ -7,6 +7,21 @@ export const SingleBlogStyles = styled.div`
     display: flex;
     flex-direction: column;
   }
+  .breadcrumbs {
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    margin-bottom: var(--page-intro-small);
+    font-size: 10px;
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .separator {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
   .left {
     ${
       "" /* max-width: 30%;
@@ -16,10 +31,8 @@ export const SingleBlogStyles = styled.div`
     }
   }
   .body {
-    ${
-      "" /* width: 70%;
-    padding-right: var(--grid-gutter);
-    padding-left: calc(var(--grid-gutter) * 4); */
+    p {
+      margin-bottom: 2rem;
     }
   }
   .title {
@@ -114,9 +127,6 @@ export const SingleBlogStyles = styled.div`
       ul > li:before {
         content: "•";
         margin-right: 5px;
-      }
-      p {
-        margin-bottom: 2rem;
       }
     }
   }

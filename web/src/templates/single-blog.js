@@ -47,6 +47,11 @@ function SingleBlog({ data }) {
       <SEO title={blog.title} />
 
       <section>
+        <div className="h6 breadcrumbs">
+          <Link to="/blog">BLOG</Link>
+          <div className="separator">•</div>
+          {blog.title}
+        </div>
         <div className="blog-header">
           <div className="left">
             <div className="h1 title">{blog.title}</div>

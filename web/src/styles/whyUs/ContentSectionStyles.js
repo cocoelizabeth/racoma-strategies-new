@@ -4,12 +4,7 @@ export const ContentSectionStyles = styled.div`
   background-color: var(--racoma-teal);
   color: var(--racoma-light);
   padding-top: var(--page-intro-small);
-  padding-bottom: calc(var(--page-section) - 2rem);
-
-  .contentSection__introText {
-    padding-bottom: var(--page-intro-small);
-    border-bottom: 1px solid var(--racoma-light);
-  }
+  padding-bottom: calc(var(--page-section) - 4rem);
 
   .contentSection__grid_row {
     grid-template-columns: 100%;
@@ -17,7 +12,7 @@ export const ContentSectionStyles = styled.div`
       margin-bottom: 2rem;
       strong {
         ${
-          '' /*             
+          "" /*             
            font-weight: var(--font-weight-h3);
           font-size: var(--font-size-h3);
           line-height: var(--line-height-h3);
@@ -41,12 +36,13 @@ export const ContentSectionStyles = styled.div`
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
-        'heading1 heading2'
-        'body1 body2';
+        "heading1 heading2"
+        "body1 body2";
       grid-column-gap: calc(var(--grid-gutter) * 2);
       column-gap: calc(var(--grid-gutter) * 8);
       border-top: 1px solid var(--racoma-light);
       padding: calc(var(--grid-gutter) * 3);
+      padding-bottom: 0;
       padding-left: 0;
       padding-right: 0;
       .contentSection_smallHeading {
