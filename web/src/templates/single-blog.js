@@ -49,15 +49,15 @@ function SingleBlog({ data }) {
       <section>
         <div className="blog-header">
           <div className="left">
-            <div className="h2 title">{blog.title}</div>
+            <div className="h1 title">{blog.title}</div>
             <hr className="hr" />
-            <ParagraphText className="publishedAt">
+            <ParagraphText className="publishedAt h5">
               <FiCalendar />
-              {format(new Date(blog.publishedAt), "MMM dd yyyy, p")}
+              {format(new Date(blog.publishedAt), "MMM dd yyyy • p")}
             </ParagraphText>
             <ParagraphText className="categoriesText">
               <BiCategory />
-              <span>
+              <span className="h5">
                 {blog.categories.map((item, index) => (
                   <span key={item.slug.current}>
                     <Link to={`/categories/${item.slug.current}`}>
