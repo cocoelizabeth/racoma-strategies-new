@@ -4,7 +4,7 @@ import { FeaturedBlogsStyles } from '../../styles/homePage/FeaturedBlogsStyles';
 import { SectionTitle } from '../typography/Title';
 import ParagraphText from '../typography/ParagraphText';
 import BlogGrid from '../blog/BlogGrid';
-
+import BlogList from '../blog/BlogList';
 function FeaturedBlogs() {
   const data = useStaticQuery(graphql`
     {
@@ -39,11 +39,10 @@ function FeaturedBlogs() {
 
   return (
     <FeaturedBlogsStyles>
-      <SectionTitle>Featured Blogs</SectionTitle>
-      <ParagraphText className="featuredBlogs__text">
-        Ldkljsdlfjsdkfsldfksdfdls
-      </ParagraphText>
-      <BlogGrid blogs={featuredBlogs} />
+      <h1>Featured Blogs</h1>
+      <ParagraphText className="featuredBlogs__text"></ParagraphText>
+      <BlogList blogs={featuredBlogs} />
+      {/* <BlogGrid blogs={featuredBlogs} /> */}
     </FeaturedBlogsStyles>
   );
 }

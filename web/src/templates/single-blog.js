@@ -45,18 +45,15 @@ function SingleBlog({ data }) {
   return (
     <SingleBlogStyles>
       <SEO title={blog.title} />
-      <PageSpace top={80} bottom={100}>
-        <div className="container">
-          <div className="blog-header">
-            <GatsbyImage
-              image={blog.coverImage.asset.gatsbyImageData}
-              alt={blog.coverImage.alt}
-              className="blog-cover-image"
-            />
-            <Title className="title">{blog.title}</Title>
+
+      <section>
+        <div className="blog-header">
+          <div className="left">
+            <div className="h2 title">{blog.title}</div>
+            <hr className="hr" />
             <ParagraphText className="publishedAt">
               <FiCalendar />
-              {format(new Date(blog.publishedAt), 'p, MMM dd yyyy')}
+              {format(new Date(blog.publishedAt), "MMM dd yyyy, p")}
             </ParagraphText>
             <ParagraphText className="categoriesText">
               <BiCategory />
@@ -66,24 +63,23 @@ function SingleBlog({ data }) {
                     <Link to={`/categories/${item.slug.current}`}>
                       {item.title}
                     </Link>
-                    {index < blog.categories.length - 1 ? ', ' : ''}
+                    {index < blog.categories.length - 1 ? ", " : ""}
                   </span>
                 ))}
               </span>
             </ParagraphText>
-            <ParagraphText className="author">
+            {/* <ParagraphText className="author">
               <FiUser />
               <Link to={`/authors/${blog.author.slug.current}`}>
                 {blog.author.name}
               </Link>
-            </ParagraphText>
-            <hr className="hr" />
-            <div className="body">
-              <MyPortableText value={blog._rawBody} />
-            </div>
+            </ParagraphText> */}
+          </div>
+          <div className="body">
+            <MyPortableText value={blog._rawBody} />
           </div>
         </div>
-      </PageSpace>
+      </section>
     </SingleBlogStyles>
   );
 }

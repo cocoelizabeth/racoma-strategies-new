@@ -3,14 +3,14 @@ import HeroSection from '../components/contact/HeroSection';
 import { SEO } from '../components/SEO';
 import ContactSection from '../components/contact/ContactSection';
 
-const IndexPage = () => (
+const ContactPage = () => (
   <>
     <HeroSection />
   </>
 );
 
-export default IndexPage;
+export default ContactPage;
 
 export const Head = () => (
-  <SEO title="Contact" />
+  <SEO title="Contact | RACOMA STRATEGIES" />
 )
