@@ -26,8 +26,9 @@ export const ComparisonTableStyles = styled.div`
 
   th:nth-child(2),
   tr td:nth-child(2) {
-    background: var(--racoma-navy);
+    background: var(--racoma-teal);
     color: var(--racoma-light);
+    border-bottom: 1px solid var(--racoma-light);
   }
 
   tr td:nth-child(4) {
