@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const ComparisonTableStyles = styled.div`
-  background-color: var(--racoma-dark);
-  color: var(--racoma-light);
+  background-color: var(--racoma-light);
+  color: var(--racoma-teal);
   padding-top: var(--page-section);
   padding-bottom: var(--page-section);
   ${'' /* border-top: 1px solid var(--racoma-light); */}
@@ -26,8 +26,8 @@ export const ComparisonTableStyles = styled.div`
 
   th:nth-child(2),
   tr td:nth-child(2) {
-    background: var(--racoma-teal);
-    ${'' /* color: var(--racoma-dark); */}
+    background: var(--racoma-navy);
+    color: var(--racoma-light);
   }
 
   tr td:nth-child(4) {
@@ -47,13 +47,13 @@ export const ComparisonTableStyles = styled.div`
   }
 
   tr {
-    border-bottom: 1px solid var(--racoma-light);
+    border-bottom: 1px solid var(--racoma-teal);
   }
   tr:last-of-type {
     border-bottom: none;
   }
   tr:first-of-type {
-    border-bottom: 1px solid var(--racoma-light);
+    border-bottom: 1px solid var(--racoma-teal);
   }
 
   @media only screen and (min-width: 720px) {
