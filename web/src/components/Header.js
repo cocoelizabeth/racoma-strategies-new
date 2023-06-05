@@ -12,6 +12,7 @@ const Header = () => {
  
   const [isNavOpen, setIsNavOpen] = useState(false);
   const handleNavItemClick = () => {
+    debugger
     if (isNavOpen) {
       setIsNavOpen(false);
     }
@@ -22,19 +23,20 @@ const Header = () => {
       <div className="header__wrapper">
         <div className="header__background" />
         <div className="header__logo">
-          <Link to="/">
-            RACOMA <br /> / Strategies
+          <Link to="/" onClick={handleNavItemClick}>
+            RACOMA <br />/ Strategies
+            {/* RAC●MA <br />± Strategies */}
           </Link>
         </div>
         <div className="header__logoDummy">
-          <Link to="/">
-            RACOMA <br /> / Strategies
+          <Link to="/" onClick={handleNavItemClick}>
+            RACOMA <br />/ Strategies
           </Link>
         </div>
         {/* <div className="header__logo">
           <Logo />
         </div> */}
-        <div className={clsx('nav__wrapper', isNavOpen && 'open')}>
+        <div className={clsx("nav__wrapper", isNavOpen && "open")}>
           <div className="mobileIcon">
             {/* <Button to="/get-an-offer" tag={Link} className="header__cta">
               GET AN OFFER

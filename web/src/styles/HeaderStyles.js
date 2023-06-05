@@ -15,7 +15,7 @@ export default styled.header`
     line-height: 1.6rem;
     text-transform: uppercase;
     font-family: var(--font-family);
-
+    height: auto;
   }
   .header__container {
     display: flex;
@@ -55,7 +55,7 @@ export default styled.header`
 
   .header__logo,
   .header__logoDummy {
-    height: 100%;
+    ${'' /* height: 100%; */}
     position: relative;
   }
 
