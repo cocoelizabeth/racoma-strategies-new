@@ -35,7 +35,7 @@ export const ContentSectionStyles = styled.div`
       letter-spacing: var(--letter-spacing-h6);
       line-height: 1.6;
     }
-    .item-11 {
+    .item-6 {
       grid-column: 1 / span 5;
       height: 25px;
       position: relative;
@@ -44,7 +44,6 @@ export const ContentSectionStyles = styled.div`
         height: 1px;
         background-color: var(--racoma-light);
         margin-top: 10px;
-
       }
       .circleContainer {
         position: absolute;
@@ -59,6 +58,7 @@ export const ContentSectionStyles = styled.div`
           width: 20px;
           background-color: var(--racoma-light);
           border-radius: 50%;
+          text-align: center;
         }
         .circle:first-of-type {
           margin-left: -10px;
@@ -72,7 +72,9 @@ export const ContentSectionStyles = styled.div`
 
   .item-15.headerText {
      {
-      align-items: flex-start;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
     }
   }
   .item20.subText {
@@ -88,6 +90,28 @@ export const ContentSectionStyles = styled.div`
     text-align: center;
   }
 
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .item-7,
+  .item-8,
+  .item-9,
+  .item-10,
+  .item-11 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
   @media only screen and (max-width: 720px) {
     .timelineGrid {
       .headerText {
@@ -96,7 +120,7 @@ export const ContentSectionStyles = styled.div`
       .subText {
         font-size: 8px;
       }
-      .item-11 {
+      .item-6 {
         .line {
           margin-top: 5px;
         }
