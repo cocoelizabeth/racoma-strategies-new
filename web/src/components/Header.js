@@ -82,7 +82,7 @@ const Header = () => {
                 </li>
               ))}
               <li className="mobileCTA">
-                <Button to="/contact" tag={Link}>
+                <Button to="/contact" tag={Link} onClick={handleNavItemClick}>
                   CONTACT US
                 </Button>
               </li>
