@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
 export const CriteriaListsStyles = styled.div`
-  background-color: var(--racoma-teal);
-  color: var(--racoma-light);
-  padding-top: var(--page-intro-small);
+  background-color: var(--racoma-light);
+  color: var(--racoma-teal);
   padding-bottom: calc(var(--page-intro-small) - 2rem);
-  border-bottom: 1px solid var(--racoma-light);
   width: 100%;
+
   .criteriaListContainer {
     padding-top: 6rem;
     padding-bottom: 6rem;
     display: flex;
     flex-direction: column;
-    border-top: 1px solid var(--racoma-light);
+    border-top: 1px solid var(--racoma-teal);
     .categoryTitle {
       text-transform: uppercase;
       padding-bottom: 4rem;
@@ -24,13 +23,19 @@ export const CriteriaListsStyles = styled.div`
       padding-right: var(--grid-padding);
       p {
         margin-bottom: 2rem;
-        
-        ${'' /* ::before {
+
+        ${
+          "" /* ::before {
           content: "✓";
           margin-right: 1.5rem;
-        } */}
+        } */
+        }
       }
     }
+  }
+
+  .criteriaListContainer:first-of-type {
+    border-top: none;
   }
 
   @media only screen and (min-width: 720px) {

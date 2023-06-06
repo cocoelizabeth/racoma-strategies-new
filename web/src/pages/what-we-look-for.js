@@ -2,14 +2,14 @@ import React from "react";
 import HeroSection from "../components/whatWeLookFor/HeroSection";
 import { SEO } from "../components/SEO";
 import CriteriaLists from "../components/whatWeLookFor/CriteriaLists";
-import ContactSection from "../components/homepage/ContactSection";
+import HeroSectionTemplate from "../../components/templates/HeroSectionTemplate";
+
 
 const WhatWeLookForPage = () => (
   <>
     <SEO title="What We Look For | RACOMA STRATEGIES" />
     <HeroSection />
     <CriteriaLists />
-    {/* <ContactSection /> */}
   </>
 );
 

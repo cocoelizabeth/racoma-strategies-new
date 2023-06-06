@@ -1,19 +1,18 @@
 import styled from "styled-components";
 
 export const ContentSectionStyles = styled.div`
-  background-color: var(--racoma-teal);
+  background-color: var(--racoma-light);
   color: var(--racoma-teal);
-  padding-top: var(--page-intro-small);
-  border-bottom: 1px solid var(--racoma-light);
-  padding-bottom: var(--page-section);
-
+  padding-top: 10.3rem;
+  padding-bottom: 10.3rem;
   .timelineGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     width: 100%;
+
     .headerText {
-      color: var(--racoma-light);
+      color: var(--racoma-teal);
       text-transform: uppercase;
       display: flex;
       justify-content: center;
@@ -24,7 +23,7 @@ export const ContentSectionStyles = styled.div`
       letter-spacing: var(--letter-spacing-h5);
     }
     .subText {
-      color: var(--racoma-light);
+      color: var(--racoma-teal);
       text-transform: uppercase;
       display: flex;
       justify-content: center;
@@ -37,12 +36,13 @@ export const ContentSectionStyles = styled.div`
     }
     .item-6 {
       grid-column: 1 / span 5;
-      height: 25px;
+      height: 10px;
       position: relative;
       margin-top: 12px;
+      margin-bottom: 12px;
       .line {
         height: 1px;
-        background-color: var(--racoma-light);
+        background-color: var(--racoma-teal);
         margin-top: 10px;
       }
       .circleContainer {
@@ -56,10 +56,12 @@ export const ContentSectionStyles = styled.div`
         .circle {
           height: 20px;
           width: 20px;
-          background-color: var(--racoma-light);
+          background-color: var(--racoma-teal);
+       
           border-radius: 50%;
           text-align: center;
         }
+
         .circle:first-of-type {
           margin-left: -10px;
         }
@@ -113,6 +115,8 @@ export const ContentSectionStyles = styled.div`
   }
 
   @media only screen and (max-width: 720px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     .timelineGrid {
       .headerText {
         font-size: 10px;
@@ -138,6 +142,49 @@ export const ContentSectionStyles = styled.div`
         }
       }
     }
+  }
+
+  ${
+    "" /* .light {
+    color: var(--racoma-light) !important;
+
+  }
+  .teal {
+    color: var(--racoma-teal) !important;
+
+  }
+  .khaki {
+    color: var(--racoma-khaki) !important;
+
+  }
+  .dark {
+    color: var(--racoma-dark) !important;
+
+  }
+  .navy {
+    color: var(--racoma-navy) !important;
+   
+  }
+  .light-bg {
+
+    background-color: var(--racoma-light) !important;
+  }
+  .teal-bg{
+
+    background-color: var(--racoma-teal) !important;
+  }
+  .khaki-bg {
+
+    background-color: var(--racoma-khaki) !important;
+  }
+  .dark-bg{
+
+    background-color: var(--racoma-dark) !important;
+  }
+  .navy-bg {
+
+    background-color: var(--racoma-navy) !important;
+  } */
   }
 `;
 

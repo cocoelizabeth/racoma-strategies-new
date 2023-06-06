@@ -26,6 +26,7 @@ function CriteriaLists() {
               headerText
               _rawSubText
             }
+
           }
         }
       }
@@ -33,6 +34,8 @@ function CriteriaLists() {
   `);
 
   const content = data.allSanityWhatWeLookFor.nodes[0].contentSection;
+
+  
   // const contentBlocks = [
   //   content.list1,
   //   content.list2,
@@ -50,9 +53,6 @@ function CriteriaLists() {
   return (
     <CriteriaListsStyles>
       <section>
-        {/* <div className="contentSection__grid">
-          {contentBlockItems}
-        </div> */}
         <div className="criteriaListContainer">
           <div className="categoryTitle h2">{content.list1.headerText}</div>
           <div className="criteriaListText">

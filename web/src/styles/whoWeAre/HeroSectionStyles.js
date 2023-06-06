@@ -10,6 +10,7 @@ export const HeroSectionStyles = styled.div`
     position: relative;
 
     margin-top: 0;
+
   }
   .hero__wrapper .h2 {
     position: relative;
@@ -17,7 +18,7 @@ export const HeroSectionStyles = styled.div`
     text-transform: uppercase;
     ${"" /* padding-bottom: var(--page-intro-small); */}
     padding-bottom: var(--page-intro-small);
-    border-bottom: 1px solid var(--racoma-light-50opacity);
+    border-bottom: 1px solid var(--racoma-light);
   }
 
   .headlineText {

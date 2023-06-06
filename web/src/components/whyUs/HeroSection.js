@@ -1,9 +1,7 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { HeroSectionStyles } from '../../styles/whyUs/HeroSectionStyles';
-import MyPortableText from '../MyPortableText';
-import Button from '../buttons/Button';
-
+import HeroSectionTemplate from '../templates/HeroSectionTemplate'
 function HeroSection() {
   const data = useStaticQuery(graphql`
     {
@@ -21,24 +19,27 @@ function HeroSection() {
   const { hero } = data.allSanityWhyUs.nodes[0];
 
   return (
-    <HeroSectionStyles>
-      <section>
-        <div className="hero__wrapper">
-          <div className="headlineText h2">{hero.headerText}</div>
-          <div className="subheadingText">
-            <MyPortableText
-              className="subheadingText__text"
-              value={hero._rawSubText}
-            />
-            <span className="placeholder" />
-            {/* <Button to={hero.link} tag={Link} className="heroCTA">
-              {hero.cta}
-            </Button> */}
-          </div>
-        </div>
+    // <HeroSectionStyles>
+    //   <section>
+    //     <div className="hero__wrapper">
+    //       <div className="headlineText h2">{hero.headerText}</div>
+    //       <div className="subheadingText">
+    //         <MyPortableText
+    //           className="subheadingText__text"
+    //           value={hero._rawSubText}
+    //         />
+    //         {/* <Button to={hero.link} tag={Link} className="heroCTA">
+    //           {hero.cta}
+    //         </Button> */}
+    //       </div>
+    //     </div>
 
-      </section>
-    </HeroSectionStyles>
+    //   </section>
+    // </HeroSectionStyles>
+    <HeroSectionTemplate
+      heading={hero.headerText}
+      subheading={hero._rawSubText}
+    />
   );
 }
 

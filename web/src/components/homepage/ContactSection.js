@@ -20,8 +20,7 @@ function ContactSection() {
         }
       }
     
-  `)
-  ;
+  `);
   
   const contact = data.allSanityHome.nodes[0].contact;
  
@@ -40,9 +39,12 @@ function ContactSection() {
           </div>
 
           <div className="h3 textWrapper">
-            <MyPortableText value={contact._rawSubText} className="h3"></MyPortableText>
+            <MyPortableText
+              value={contact._rawSubText}
+              className="h3"
+            ></MyPortableText>
             <p className="contactSection__cta">
-              <Button to={contact.link} tag={Link} variant="primaryLight">
+              <Button to={contact.link} tag={Link} variant="navyLight">
                 {contact.cta}
               </Button>
             </p>

@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const ContactSectionStyles = styled.div`
-  background-color: var(--racoma-teal);
+  background-color: var(--racoma-navy);
   color: var(--racoma-light);
   padding-top: var(--page-intro-small);
   padding-bottom: var(--page-intro-small);
   .contactSection__wrapper {
     display: flex;
-    border-top: 1px solid var(--racoma-teal);
+    ${'' /* border-top: 1px solid var(--racoma-teal); */}
     flex-direction: column;
     width: 100%;
     .headingWrapper {

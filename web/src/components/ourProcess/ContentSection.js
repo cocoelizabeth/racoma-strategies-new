@@ -84,15 +84,15 @@ function ContentSection() {
           </div>
           <div class="item-7"></div>
           <div className="item-8">
-            <div className="headerText">{stepsData.step2.headerText}</div>
-            <div className="subText">
+            <div className="headerText teal">{stepsData.step2.headerText}</div>
+            <div className="subText teal">
               <MyPortableText value={stepsData.step2._rawSubText} />
             </div>
           </div>
           <div class="item-9"></div>
           <div className="item-10">
-            <div className="headerText">{stepsData.step4.headerText}</div>
-            <div className="subText">
+            <div className="headerText ">{stepsData.step4.headerText}</div>
+            <div className="subText ">
               <MyPortableText value={stepsData.step4._rawSubText} />
             </div>
           </div>

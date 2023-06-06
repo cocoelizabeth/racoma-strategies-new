@@ -14,7 +14,7 @@ export const ContentSectionStyles = styled.div`
   .introContainer {
     display: flex;
     flex-direction: column;
-    margin-top: var(--page-meta-bar);
+    ${'' /* margin-top: var(--page-meta-bar); */}
 
     .headshotContainer {
       .sectionTitle {
@@ -25,7 +25,7 @@ export const ContentSectionStyles = styled.div`
       }
       .whoWeAre__iconsList {
         margin-bottom: 3.5rem;
-        margin-top: 3.5rem;
+        margin-top: 2.5rem;
         li {
           display: inline-block;
           margin-right: 1rem;

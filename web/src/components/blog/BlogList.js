@@ -3,6 +3,7 @@ import { BlogListStyles } from "../../styles/blog/BlogListStyles";
 import BlogListItem from "./BlogListItem";
 
 function BlogList({ blogs }) {
+
   return (
     <BlogListStyles>
       {blogs &&
