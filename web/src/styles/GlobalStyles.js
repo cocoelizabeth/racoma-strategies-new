@@ -270,7 +270,7 @@ ${'' /* HEADER STYLES */}
 }
 
 main {
-    margin-top: var(--header-height);
+    padding-top: var(--header-height);
 
 }
 section {
@@ -530,6 +530,9 @@ section {
   vertical-align: middle;
 }
 
+main {
+    min-height: calc(100vh - (var(--header-height) * 2))
+}
 
   
 `;
