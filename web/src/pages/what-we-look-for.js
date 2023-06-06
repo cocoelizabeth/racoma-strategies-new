@@ -2,7 +2,6 @@ import React from "react";
 import HeroSection from "../components/whatWeLookFor/HeroSection";
 import { SEO } from "../components/SEO";
 import CriteriaLists from "../components/whatWeLookFor/CriteriaLists";
-import HeroSectionTemplate from "../../components/templates/HeroSectionTemplate";
 
 
 const WhatWeLookForPage = () => (
