@@ -3,13 +3,12 @@ import styled from "styled-components";
 export const FooterStyles = styled.footer`
   text-align: left;
   background-color: var(--racoma-teal);
-  padding-bottom: var(--page-section);
-  padding-bottom: var(--page-intro-small);
+  padding-bottom: calc(1.5rem + 2.5vw);
   border-top: 1px solid var(--racoma-light);
   .footer__wrapper {
     display: flex;
     flex-direction: column;
-    ${'' /* padding-top: var(--page-intro-small); */}
+    ${"" /* padding-top: var(--page-intro-small); */}
     width: 100%;
     padding-top: calc(1.5rem + 2.5vw);
 

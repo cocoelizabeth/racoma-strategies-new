@@ -24,6 +24,7 @@ function HeroSection() {
 
   return (
     <HeroSectionStyles>
+
       <section>
         <div className="hero__wrapper">
           <div className="headlineText h2">{hero.headlineText}</div>

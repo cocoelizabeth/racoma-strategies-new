@@ -251,7 +251,9 @@ sup {
 ${'' /* HEADER STYLES */}
 :root {
  --header-height: calc(32px + ((1.5rem + 2.5vw) * 2));
+ --footer-height: calc(1.5rem + 2.5vw + 32px + 3rem + 42px + 3rem + var(--page-intro-small))
 }
+
 
 @media only screen and (min-width: 1280px) {
     :root {
@@ -532,6 +534,7 @@ section {
 
 main {
     min-height: calc(100vh - (var(--header-height) * 2))
+   
 }
 
   
