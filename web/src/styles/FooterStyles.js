@@ -33,18 +33,24 @@ export const FooterStyles = styled.footer`
     }
   }
 
+  .copyright {
+    padding-top: 1.2rem;
+    font-size: var(--font-size-small);
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid var(--racoma-light);
+
+  }
+
   @media only screen and (min-width: 720px) {
     .footer__wrapper {
-      padding-top: 2rem;
+      ${"" /* padding-top: 2rem; */}
       flex-direction: row;
       justify-content: space-between;
       ${"" /* align-items: flex-end; */}
     }
-  }
-
-  .copyright {
-    margin-top: 1rem;
-    color: var(--gray);
-    font-size: 1.2rem;
+    .copyright {
+      text-align: center;
+    }
   }
 `;

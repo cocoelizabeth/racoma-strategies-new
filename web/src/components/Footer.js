@@ -4,6 +4,7 @@ import { FooterStyles } from '../styles/FooterStyles';
 import Logo from './Logo';
 import { socialLinks } from '../constants/socialLinks';
 import Button from './buttons/Button';
+import ParagraphText from './typography/ParagraphText'
 
 function Footer() {
   return (
@@ -30,6 +31,11 @@ function Footer() {
             </Button>
           </div> */}
         </div>
+
+        <ParagraphText className="copyright">
+          © Racoma Strategies LLC {new Date().getFullYear()}. All rights
+          reserved.
+        </ParagraphText>
       </section>
 
       {/* <ul className="footer__menuList">
@@ -39,11 +45,6 @@ function Footer() {
             </li>
           ))}
         </ul> */}
-
-      {/* <ParagraphText className="copyright">
-          © Racoma Strategies LLC {new Date().getFullYear()}. All rights
-          reserved.
-        </ParagraphText> */}
     </FooterStyles>
   );
 }
