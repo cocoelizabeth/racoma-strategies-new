@@ -23,7 +23,7 @@ function ComparisonTable() {
   return (
     <ComparisonTableStyles>
       <section>
-      {/* <h3>RACOMA STRATEGIES VS. PRIVATE EQUITY VS. COMPETITOR ACQUISITION</h3> */}
+        {/* <h3>RACOMA STRATEGIES VS. PRIVATE EQUITY VS. COMPETITOR ACQUISITION</h3> */}
         <table>
           <thead>
             <tr>
@@ -36,49 +36,60 @@ function ComparisonTable() {
           <tbody>
             <tr>
               <th> SELLER’S PROFIT</th>
-              <td> Major liquidity event upon close</td>
               <td>
                 {" "}
-                Often tied to earnout and performance metrics, or long-term
+                You’ll see your money upfront with a major liquidity event upon
+                close
+              </td>
+              <td>
+                {" "}
+                It could take a long time for you to take money off the table.
+                Often tied to earnout and performance metrics, or the long-term,
                 ongoing success of the business
-              </td> 
+              </td>
               <td>
                 {" "}
+                It could take a long time for you to take money off the table.
                 Often tied to earnout and performance metrics as well as
-                Seller’s continued roll working as a manager for the buyer
+                Seller’s continued role working as a manager for the buyer
               </td>
             </tr>
             <tr>
               <th> TIME TO CLOSE</th>
               <td>
-                2-5 months dealing with one counterparty and decision maker
+                Fastest option possible with the potential to get from initial
+                introduction to a completed transaction in under 3 months.
+                You’ll be interacting directly with our only decision maker, so
+                the process is quick and pain free
               </td>
               <td>
-                6 months - 1 year dealing with several counterparties and
-                investment committees needed to approve
+                6-12 month negotiation process involving several counterparties
+                and approval required from investment committees
               </td>
               <td>
-                9 months to over 1 year dealing with several layers of approval
-                and a protracted integration period
+                9-12+ month negotiation process requiring several layers of
+                approval and a protracted integration period
               </td>
             </tr>
             <tr>
               <th> EASE OF TRANSACTION</th>
               <td>
-                Completely flexible to Seller’s needs and circumstances. We have
-                no return metrics or investor board that needs to weigh in
+                The deal structure is completely flexible to Seller’s needs and
+                circumstances. We are able to easily adapt in order to create
+                the most mutual benefit
               </td>
               <td>
-                Driven by required return thresholds for investors and other
-                strict requirements
+                The deal structure is driven by required return thresholds for
+                investors and other strict requirements
               </td>
               <td>
-                Structured to protect acquiring company from risk in a
-                potentially disadvantageous situation for Seller
+                The deal is structured to protect the acquiring company from
+                risk, which means a potentially disadvantageous situation for
+                Seller
               </td>
             </tr>
             <tr>
-              <th> SELLER’S FUTURE</th>
+              <th> SELLER’S ROLE POST-CLOSING</th>
               <td>Extremely flexible to Seller’s preference</td>
               <td>
                 Full-time ongoing operating responsibility with strict investor
@@ -86,7 +97,7 @@ function ComparisonTable() {
               </td>
               <td>
                 Required to stay on for extended time as a business unit manager
-                working in a corporate structure
+                working under a corporate structure
               </td>
             </tr>
             <tr>
@@ -97,7 +108,7 @@ function ComparisonTable() {
               </td>
               <td>
                 One of many companies within a portfolio, often bought to be
-                resold within 3-5 years after aggressive cost cutting measures
+                resold within 3-5 years after aggressive cost-cutting measures
               </td>
               <td>
                 Small piece of a larger business, often with less autonomy and
@@ -107,26 +118,30 @@ function ComparisonTable() {
             <tr>
               <th>EMPLOYEES’ FUTURE</th>
               <td>
-                More critical than ever with significant opportunity to grow and
-                be promoted within the company
+                Current employees will be critical to the business
+                post-transaction. High-quality employees will have significant
+                opportunities for growth and promotion.
               </td>
-              <td>At risk due to private equity cost cutting measures</td>
               <td>
-                At risk as competitor will have their own employees and
-                terminate those that are redundant
+                Employment status at risk due to private equity cost cutting
+                measures
+              </td>
+              <td>
+                Employment status at risk as competitor will have their own
+                employees and terminate those that are redundant
               </td>
             </tr>
             <tr>
               <th>SOURCE OF CAPITAL</th>
               <td>
-                Personal wealth and committed group of high net worth and ultra
-                high net worth individuals
+                Personal wealth and committed group of high-net-worth and
+                ultra-high-net-worth individuals
               </td>
               <td>
                 Institutional Funds, Sovereign Wealth Funds, and Pension Funds
                 that have limited time to generate specific returns
               </td>
-              <td>Company performance and capital market cycle </td>
+              <td>Company performance and capital market cycle</td>
             </tr>
           </tbody>
         </table>
