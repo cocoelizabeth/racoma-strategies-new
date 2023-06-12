@@ -118,9 +118,9 @@ function ComparisonTable() {
             <tr>
               <th>EMPLOYEES’ FUTURE</th>
               <td>
-                Current employees will be critical to the business
-                post-transaction. High-quality employees will have significant
-                opportunities for growth and promotion.
+                Highly focused on retention as current employees will be
+                critical to the business post-transaction. There will be
+                significant opportunity for growth and promotion
               </td>
               <td>
                 Employment status at risk due to private equity cost cutting

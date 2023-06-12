@@ -34,12 +34,12 @@ export const FooterStyles = styled.footer`
   }
 
   .copyright {
+    margin-top: calc(1.5rem + 2.5vw);
     padding-top: 1.2rem;
     font-size: var(--font-size-small);
     width: 100%;
     text-align: left;
     border-top: 1px solid var(--racoma-light);
-
   }
 
   @media only screen and (min-width: 720px) {
