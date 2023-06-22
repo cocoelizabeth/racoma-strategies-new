@@ -24,7 +24,7 @@ const Header = () => {
         <div className="header__logo">
           <Link to="/" onClick={handleNavItemClick}>
             RACOMA <br />/ Strategies
-            {/* RAC●MA <br />± Strategies */}
+            
           </Link>
         </div>
         <div className="header__logoDummy">

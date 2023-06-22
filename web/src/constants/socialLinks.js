@@ -4,8 +4,8 @@ import { FaLinkedin } from 'react-icons/fa';
 export const socialLinks = [
   {
     name: 'Phone',
-    url: 'tel:+1917-268-1359',
-    text: '+1 917.268.1359',
+    url: 'tel:+1646-389-1049',
+    text: '+1 646.389.1049',
     icon: <MdLocalPhone />,
   },
   {
