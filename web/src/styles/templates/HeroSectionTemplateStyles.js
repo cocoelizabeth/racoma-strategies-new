@@ -29,6 +29,14 @@ export const HeroSectionTemplateStyles = styled.div`
     text-transform: none;
     font-size: 3.2rem;
     font-size: 2rem;
+    p {
+      a {
+        border-bottom: 1px solid var(--racoma-light);
+        :hover {
+          opacity: 50%;
+        }
+      }
+    }
   }
 
   .heroCTA {

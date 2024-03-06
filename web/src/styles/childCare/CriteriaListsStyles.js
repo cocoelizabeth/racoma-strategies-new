@@ -24,6 +24,14 @@ export const CriteriaListsStyles = styled.div`
       p {
         margin-bottom: 2rem;
 
+        a {
+          color: var(--racoma-teal);
+          border-bottom: 1px solid var(--racoma-teal);
+        }
+        a:hover  {
+          opacity: 50%;
+        }
+
         ${
           "" /* ::before {
           content: "✓";

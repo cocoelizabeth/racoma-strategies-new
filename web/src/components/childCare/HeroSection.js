@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
-import { HeroSectionStyles } from "../../styles/childCare/HeroSectionStyles";
 import MyPortableText from "../MyPortableText";
 import Button from "../buttons/Button";
 import HeroSectionTemplate from "../templates/HeroSectionTemplate";

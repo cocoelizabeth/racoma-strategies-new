@@ -1,4 +1,4 @@
-import { MdStar, MdHome, MdPerson, MdTimeline } from 'react-icons/md';
+import { MdStar, MdHome, MdPerson, MdTimeline, MdChildCare } from 'react-icons/md';
 import { BsFillQuestionCircleFill } from 'react-icons/bs'
 import { GrSearch } from 'react-icons/gr';
 import S from '@sanity/desk-tool/structure-builder';
@@ -44,6 +44,13 @@ function SidebarList() {
         .child(
           S.editor().schemaType('whatWeLookFor').documentId('whatWeLookFor')
         ),
+      S.listItem()
+        .title('Child Care')
+        .id('childCare')
+        .icon(MdChildCare)
+        .child(
+          S.editor().schemaType('childCare').documentId('childCare')
+      ),
       S.listItem()
         .title('Why Us')
         .id('whyUs')

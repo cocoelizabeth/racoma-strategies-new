@@ -15,7 +15,7 @@ export default {
     {
       title: 'Sub Text',
       name: 'subText',
-      type: 'richText',
+      type: 'normalText',
     },
   ],
 };

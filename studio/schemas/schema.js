@@ -29,12 +29,14 @@ import whatWeLookFor from './pageDocuments/whatWeLookFor';
 import whyUs from './pageDocuments/whyUs';
 import whoWeAre from './pageDocuments/whoWeAre';
 import ourProcess from './pageDocuments/ourProcess';
+import childCare from './pageDocuments/childCare';
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
     // page documents,
     home,
     whatWeLookFor,
+    childCare,
     whyUs,
     whoWeAre,
     ourProcess,
