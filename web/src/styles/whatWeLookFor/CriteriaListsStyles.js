@@ -41,6 +41,23 @@ export const CriteriaListsStyles = styled.div`
         }
       }
     }
+    ul {
+      display: table;
+      li {
+        margin-bottom: 2rem;
+        counter-increment: foo;
+        display: table-row;
+        :before {
+          content: counter(foo) ".";
+          display: table-cell;
+          text-align: right;
+          content: "•";
+          font-weight: var(--font-weight-bold);
+          padding: 10px;
+        }
+      }
+    }
+
   }
 
   .criteriaListContainer:first-of-type {
@@ -57,11 +74,15 @@ export const CriteriaListsStyles = styled.div`
         width: 50%;
       }
     }
+    .categoryTitle {
+        padding-right: 6rem;
+      }
   }
 
   @media only screen and (min-width: 1280px) {
     .criteriaListContainer {
       .categoryTitle {
+        padding-right: 10.3rem;
       }
       .criteriaListText {
       }
