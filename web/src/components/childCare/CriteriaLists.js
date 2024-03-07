@@ -10,7 +10,8 @@ function CriteriaLists() {
     {
       allSanityChildCare {
         nodes {
-          contentSection {
+          criteriaListsContent {
+            sectionHeading
             list1 {
               _key
               headerText
@@ -33,7 +34,7 @@ function CriteriaLists() {
     }
   `);
 
-  const content = data.allSanityChildCare.nodes[0].contentSection;
+  const content = data.allSanityChildCare.nodes[0].criteriaListsContent;
 
   
   // const contentBlocks = [
@@ -52,7 +53,11 @@ function CriteriaLists() {
 
   return (
     <CriteriaListsStyles>
+      <section className="sectionHeadingContainer">
+        <div className="sectionHeading h1">{content.sectionHeading}</div>
+      </section>
       <section>
+
         <div className="criteriaListContainer">
           <div className="categoryTitle h2">{content.list1.headerText}</div>
           <div className="criteriaListText">

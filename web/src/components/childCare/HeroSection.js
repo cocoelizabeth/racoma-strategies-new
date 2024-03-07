@@ -21,6 +21,7 @@ function HeroSection() {
   const { hero } = data.allSanityChildCare.nodes[0];
 
   return (
+    
     // <HeroSectionStyles>
     //   <section>
     //     <div className="hero__wrapper">

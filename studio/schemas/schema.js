@@ -22,6 +22,7 @@ import criteriaLists from './objects/whatWeLookFor/criteriaLists';
 import textBlock from './objects/textBlock';
 import reasons from './objects/whyUs/reasons';   
 import steps from './objects/ourProcess/steps';
+import criteriaListsWithTitle from './objects/childCare/criteriaListsWithTitle';
 
 // import page documents
 import home from './pageDocuments/home';
@@ -58,6 +59,7 @@ export default createSchema({
     criteriaLists,
     reasons,
     steps,
+    criteriaListsWithTitle,
     // reasonsList,
   ]),
 });

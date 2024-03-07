@@ -19,10 +19,16 @@ export default {
       description: "First section on page with heading & paragraph text",
     },
     {
-      title: "Content Section",
-      name: "contentSection",
-      type: "criteriaLists",
-      description: "Second section on page with criteria lists"
+        title: "Philosophy Section",
+        name: "philosophy",
+        type: "textBlock",
+        description: "Second section on page with heading & paragraph text",
     },
+    {
+        title: "Criteria Content",
+        name: "criteriaListsContent",
+        type: "criteriaListsWithTitle",
+        description: "Third section on page with criteria lists"
+      },
   ],
 };

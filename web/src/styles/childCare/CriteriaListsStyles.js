@@ -6,6 +6,16 @@ export const CriteriaListsStyles = styled.div`
   padding-bottom: calc(var(--page-intro-small) - 2rem);
   width: 100%;
 
+  .sectionHeadingContainer {
+    padding-top: calc(var(--page-intro-small) * 2);
+      
+      .sectionHeading {
+        padding-bottom: calc(var(--page-intro-small) / 2);
+        border-bottom: 1px solid var(--racoma-teal);
+      }
+  
+  }
+
   .criteriaListContainer {
     padding-top: 6rem;
     padding-bottom: 6rem;
