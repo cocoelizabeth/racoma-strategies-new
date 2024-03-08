@@ -9,9 +9,12 @@ export const CriteriaListsStyles = styled.div`
   .sectionHeadingContainer {
     padding-top: calc(var(--page-intro-small) * 2);
       
-      .sectionHeading {
+      .headlineText {
         padding-bottom: calc(var(--page-intro-small) / 2);
-        border-bottom: 1px solid var(--racoma-teal);
+        text-transform: uppercase;
+        width: 100%;
+        font-size: 4rem;
+        /* border-bottom: 1px solid var(--racoma-teal); */
       }
   
   }
@@ -86,6 +89,20 @@ export const CriteriaListsStyles = styled.div`
       }
     }
   }
+
+
+  @media only screen and (min-width: 1024px) {
+    .sectionHeadingContainer {
+      .headlineText {
+        font-size: 5.3vw;
+        width: 50%;
+        width: 100%;
+      }
+    }
+
+  }
+
+
 
   @media only screen and (min-width: 1280px) {
     .criteriaListContainer {

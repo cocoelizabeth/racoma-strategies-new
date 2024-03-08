@@ -54,7 +54,7 @@ function CriteriaLists() {
   return (
     <CriteriaListsStyles>
       <section className="sectionHeadingContainer">
-        <div className="sectionHeading h1">{content.sectionHeading}</div>
+        <div className="headlineText h2">{content.sectionHeading}</div>
       </section>
       <section>
 
