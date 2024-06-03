@@ -59,20 +59,40 @@ const GlobalStyles = createGlobalStyle`
     --line-height-small: 1.14;
     --line-height-body: 1.4;
     --line-height-large: 1.45;
-    --font-weight-regular: 300;
-    --font-weight-medium: 400;
-    --font-weight-bold: 700;
     --letter-spacing-small: -0.02em;
     --letter-spacing-body: -0.01em;
     --letter-spacing-large: -0.04em;
-    --font-family: Helvetica, Arial;
-    /* --font-family: SctoGroteskA, Arial; */
+
+    //SctoGroteskA
+    /* --font-family: SctoGroteskA, Helvetica, sans-serif;
+    --font-weight-regular: 300;
+    --font-weight-medium: 400;
+    --font-weight-bold: 700; */
+
+    //AKTIV GROTESK
+    /* --font-family: aktiv-grotesk, Helvetica, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+    --font-weight-bold: 700; */
+
+
+    //ELZA TEXT
+    --font-family: elza-text, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+
+
     --font-size-h1: 4rem;
     --font-size-h2: 2.4rem;
     --font-size-h3: 2.2rem;
     --font-size-h4: 2rem;
     --font-size-h5: 1.8rem;
     --font-size-h6: 1.6rem;
+
+
+
     --line-height-h1: 0.9;
     --line-height-h2: 1.1;
     --line-height-h3: 1.1;
@@ -91,6 +111,10 @@ const GlobalStyles = createGlobalStyle`
     --letter-spacing-h4: -0.02em;
     --letter-spacing-h5: -0.02em;
     --letter-spacing-h6: -0.02em;
+
+
+
+
   }
 
 @media only screen and (min-width: 1280px) {

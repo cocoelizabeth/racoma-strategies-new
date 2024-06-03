@@ -43,6 +43,14 @@ module.exports = {
     __key: "images"
   },
   {
+    resolve: "gatsby-plugin-web-font-loader",
+    options: {
+      typekit: {
+        id: process.env.GATSBY_ADOBE_FONT_PROJECT_ID,
+      },
+    },
+  },
+  {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {

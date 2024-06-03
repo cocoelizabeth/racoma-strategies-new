@@ -13,6 +13,8 @@ export const ButtonStyles = styled(Link)`
   cursor: pointer;
   border-radius: 1.6rem;
   padding: 0.2rem 3rem 0;
+  padding: 0.3rem 3rem 0;
+  /* padding: 0 3rem; */
   overflow: hidden;
   color: currentColor;
   font-weight: var(--font-weight-bold);
