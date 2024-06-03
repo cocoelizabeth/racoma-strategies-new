@@ -117,7 +117,6 @@ export default styled.header`
           display: inline-block;
           position: relative;
           text-decoration: none;
-          vertical-align: middle;
           font-size: var(--font-size-small);
           text-transform: uppercase;
           ${"" /* font-size: 10px; */}
@@ -127,7 +126,8 @@ export default styled.header`
   }
 
   .header__cta {
-    font-size: 9px;
+    /* font-size: 9px; */
+    /* font-size: var(--font-size-small); */
     
   }
 

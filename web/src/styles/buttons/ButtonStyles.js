@@ -12,16 +12,21 @@ export const ButtonStyles = styled(Link)`
   border: 0.1rem solid;
   cursor: pointer;
   border-radius: 1.6rem;
-  padding: 0.2rem 3rem 0;
+  // SctoGroteskA Padding & Letter Spacing
+  /* padding: 0.2rem 3rem 0;
+  letter-spacing: -0.02em; */
+
+  // Elza Text Padding */
   padding: 0.3rem 3rem 0;
-  /* padding: 0 3rem; */
+  letter-spacing: normal;
+
   overflow: hidden;
   color: currentColor;
   font-weight: var(--font-weight-bold);
   font-size: 1.1rem;
   line-height: 2.8rem;
   line-height: 2.8rem;
-  letter-spacing: -0.02em;
+
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;

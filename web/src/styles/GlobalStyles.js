@@ -64,21 +64,21 @@ const GlobalStyles = createGlobalStyle`
     --letter-spacing-large: -0.04em;
 
     //SctoGroteskA
-    /* --font-family: SctoGroteskA, Helvetica, sans-serif;
+    --font-family: SctoGroteskA, Helvetica, sans-serif;
     --font-weight-regular: 300;
     --font-weight-medium: 400;
-    --font-weight-bold: 700; */
+    --font-weight-bold: 700;
 
     //AKTIV GROTESK
     /* --font-family: aktiv-grotesk, Helvetica, sans-serif;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
-    --font-weight-bold: 600;
-    --font-weight-bold: 700; */
+    --font-weight-bold: 600; */
+    /* --font-weight-bold: 700; */
 
 
     //ELZA TEXT
-    --font-family: elza-text, sans-serif;
+    --font-family: elza-text, Helvetica, sans-serif;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 600;
