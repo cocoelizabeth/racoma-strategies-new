@@ -65,7 +65,8 @@ const GlobalStyles = createGlobalStyle`
     --letter-spacing-small: -0.02em;
     --letter-spacing-body: -0.01em;
     --letter-spacing-large: -0.04em;
-    --font-family: SctoGroteskA, Arial;
+    --font-family: Helvetica, Arial;
+    /* --font-family: SctoGroteskA, Arial; */
     --font-size-h1: 4rem;
     --font-size-h2: 2.4rem;
     --font-size-h3: 2.2rem;
@@ -221,8 +222,6 @@ sup {
   body {
     min-height: 100vh;
     width: 100%;
-    font-family: SctoGroteskA, Arial;
-    font-weight: 300;
     background: var(--racoma-teal);
     color: var(--racoma-light);
     font-weight: var(--font-weight-medium);

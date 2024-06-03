@@ -21,7 +21,7 @@ export const BlogListItemStyles = styled.div`
     a {
       text-decoration: underline;
       pointer: cursor;
-      font-weight: 700;
+      font-weight: var(--font-weight-bold);
     }
   }
   .title {
