@@ -12,9 +12,7 @@ export const ButtonStyles = styled(Link)`
   border: 0.1rem solid;
   cursor: pointer;
   border-radius: 1.6rem;
-  // SctoGroteskA Padding & Letter Spacing
-  /* padding: 0.2rem 3rem 0;
-  letter-spacing: -0.02em; */
+
 
   // Elza Text Padding */
   padding: 0.3rem 3rem 0;

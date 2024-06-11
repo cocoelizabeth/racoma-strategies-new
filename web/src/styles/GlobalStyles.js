@@ -27,29 +27,6 @@ const GlobalStyles = createGlobalStyle`
     --racoma-light-50opacity: rgba(249, 235, 227, 0.5);
   }
 
-  @font-face {
-      font-weight: 700;
-      font-family: SctoGroteskA;
-      font-named-instance: "Bold";
-      font-display: block;
-      src: url(/fonts/SctoGroteskA-Bold.d6497298.woff2) format("woff2");
-  }
-
-  @font-face {
-      font-weight: 400;
-      src: url(/fonts/SctoGroteskA-Medium.2ede3563.woff2) format("woff2");
-      font-named-instance: "Medium";
-      font-family: SctoGroteskA;
-      font-display: block;
-  }
-
-  @font-face {
-      font-weight: 300;
-      font-named-instance: "Regular";
-      src: url(/fonts/SctoGroteskA-Regular.1e986128.woff2) format("woff2");
-      font-family: SctoGroteskA;
-      font-display: block;
-  }
 
   :root {
     --rem-base: 62.5%;
@@ -63,11 +40,6 @@ const GlobalStyles = createGlobalStyle`
     --letter-spacing-body: -0.01em;
     --letter-spacing-large: -0.04em;
 
-    //SctoGroteskA
-    --font-family: SctoGroteskA, Helvetica, sans-serif;
-    --font-weight-regular: 300;
-    --font-weight-medium: 400;
-    --font-weight-bold: 700;
 
     //AKTIV GROTESK
     /* --font-family: aktiv-grotesk, Helvetica, sans-serif;
