@@ -483,6 +483,7 @@ section {
         transform:translateX(0)
     }
 }
+
 :root {
     --ease-out: cubic-bezier(0.28,0.44,0.49,1);
     --bounce: cubic-bezier(0.6,0,0.1,1.4);

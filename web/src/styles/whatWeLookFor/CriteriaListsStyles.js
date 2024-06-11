@@ -27,12 +27,16 @@ export const CriteriaListsStyles = styled.div`
         a {
           color: var(--racoma-teal);
           border-bottom: 1px solid var(--racoma-teal);
+          ::after {
+            content: "→";
+            padding-left: 10px;
+            border-bottom: 1px solid var(--racoma-light);
+          }
+
         }
         a:hover  {
           opacity: 50%;
         }
-
-
         ${
           "" /* ::before {
           content: "✓";
@@ -165,4 +169,6 @@ export const CriteriaListsStyles = styled.div`
       }
     }
   }
+
+
 `;
